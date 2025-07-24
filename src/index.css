@@ -8,40 +8,41 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 203 85% 13%;
+    --background: 15 20% 96%;
+    --foreground: 218 100% 15%;
 
     --card: 0 0% 100%;
-    --card-foreground: 203 85% 13%;
+    --card-foreground: 218 100% 15%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 203 85% 13%;
+    --popover-foreground: 218 100% 15%;
 
-    --primary: 196 86% 34%;
+    --primary: 267 85% 55%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 15 42% 82%;
-    --secondary-foreground: 203 85% 13%;
+    --secondary-foreground: 218 100% 15%;
 
-    --muted: 15 42% 90%;
-    --muted-foreground: 203 35% 45%;
+    --muted: 267 15% 92%;
+    --muted-foreground: 267 15% 45%;
 
-    --accent: 185 85% 52%;
+    --accent: 182 88% 46%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 15 42% 85%;
-    --input: 15 42% 85%;
-    --ring: 185 85% 52%;
+    --border: 267 15% 85%;
+    --input: 267 15% 88%;
+    --ring: 267 85% 55%;
 
-    /* Custom quiz app colors */
-    --quiz-primary: 203 85% 13%;
-    --quiz-secondary: 196 86% 34%;
-    --quiz-accent: 185 85% 52%;
-    --quiz-warm: 15 42% 82%;
-    --quiz-neutral: 203 35% 45%;
+    /* NASA Space Challenge colors */
+    --space-primary: 218 100% 15%;
+    --space-secondary: 267 85% 55%;
+    --space-accent: 182 88% 46%;
+    --space-warm: 15 42% 82%;
+    --space-neutral: 267 15% 45%;
+    --space-gradient: linear-gradient(135deg, hsl(267 85% 55%), hsl(182 88% 46%));
 
     --radius: 0.5rem;
 
@@ -63,40 +64,40 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 203 85% 13%;
+    --background: 218 100% 8%;
     --foreground: 0 0% 98%;
 
-    --card: 203 75% 18%;
+    --card: 218 50% 12%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 203 75% 18%;
+    --popover: 218 50% 12%;
     --popover-foreground: 0 0% 98%;
 
-    --primary: 185 85% 52%;
-    --primary-foreground: 203 85% 13%;
+    --primary: 182 88% 46%;
+    --primary-foreground: 218 100% 8%;
 
-    --secondary: 203 35% 25%;
+    --secondary: 267 20% 20%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 203 35% 25%;
-    --muted-foreground: 185 30% 70%;
+    --muted: 267 20% 18%;
+    --muted-foreground: 267 30% 70%;
 
-    --accent: 196 86% 34%;
+    --accent: 267 85% 55%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 203 35% 25%;
-    --input: 203 35% 25%;
-    --ring: 185 85% 52%;
+    --border: 267 20% 20%;
+    --input: 267 20% 18%;
+    --ring: 182 88% 46%;
 
-    /* Custom quiz app colors for dark mode */
-    --quiz-primary: 185 85% 52%;
-    --quiz-secondary: 196 86% 34%;
-    --quiz-accent: 15 42% 82%;
-    --quiz-warm: 15 42% 60%;
-    --quiz-neutral: 185 30% 70%;
+    /* NASA Space Challenge colors for dark mode */
+    --space-primary: 182 88% 46%;
+    --space-secondary: 267 85% 55%;
+    --space-accent: 15 42% 82%;
+    --space-warm: 15 42% 60%;
+    --space-neutral: 267 30% 70%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;

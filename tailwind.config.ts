@@ -52,12 +52,12 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				quiz: {
-					primary: 'hsl(var(--quiz-primary))',
-					secondary: 'hsl(var(--quiz-secondary))',
-					accent: 'hsl(var(--quiz-accent))',
-					warm: 'hsl(var(--quiz-warm))',
-					neutral: 'hsl(var(--quiz-neutral))'
+				space: {
+					primary: 'hsl(var(--space-primary))',
+					secondary: 'hsl(var(--space-secondary))',
+					accent: 'hsl(var(--space-accent))',
+					warm: 'hsl(var(--space-warm))',
+					neutral: 'hsl(var(--space-neutral))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
