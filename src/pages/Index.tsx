@@ -78,7 +78,7 @@ const Index = () => {
                 </Tabs>
               </DialogContent>
             </Dialog>
-            <Button className="bg-gradient-to-r from-space-secondary to-space-accent hover:opacity-90 text-white shadow-lg">
+            <Button className="bg-gradient-to-r from-space-secondary to-space-accent hover:opacity-90 text-white shadow-lg" onClick={() => window.location.href = '/quiz'}>
               Começar Quiz
             </Button>
           </div>
@@ -102,7 +102,7 @@ const Index = () => {
             Ganhe certificados oficiais e se torne um expert em ciências espaciais.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-space-secondary to-space-accent hover:opacity-90 text-white px-8 py-6 text-lg shadow-lg">
+            <Button size="lg" className="bg-gradient-to-r from-space-secondary to-space-accent hover:opacity-90 text-white px-8 py-6 text-lg shadow-lg" onClick={() => window.location.href = '/quiz'}>
               <Rocket className="w-5 h-5 mr-2" />
               Iniciar Missão
             </Button>
