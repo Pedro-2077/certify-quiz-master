@@ -239,29 +239,31 @@ const Quiz = () => {
             </CardTitle>
           </CardHeader>
           <CardContent className="p-8 space-y-6">
-            <div className="grid gap-4">
-              {mockQuestions[currentQuestion].options.map((option, index) => (
-                <div 
-                  key={index} 
-                  className={`relative p-6 rounded-xl border transition-all duration-300 cursor-pointer hover:shadow-lg ${
-                    selectedAnswer === index.toString() 
-                      ? 'border-space-secondary bg-gradient-to-r from-space-secondary/10 to-space-accent/10 shadow-lg' 
-                      : 'border-space-warm/20 hover:border-space-secondary/50 hover:bg-space-warm/5'
-                  }`}
-                  onClick={() => setSelectedAnswer(index.toString())}
-                >
-                  <div className="flex items-center space-x-4">
-                    <RadioGroupItem value={index.toString()} id={`option-${index}`} className="flex-shrink-0" />
-                    <Label 
-                      htmlFor={`option-${index}`} 
-                      className="text-space-neutral cursor-pointer flex-1 text-lg leading-relaxed"
-                    >
-                      {option}
-                    </Label>
+            <RadioGroup value={selectedAnswer} onValueChange={setSelectedAnswer}>
+              <div className="grid gap-4">
+                {mockQuestions[currentQuestion].options.map((option, index) => (
+                  <div 
+                    key={index} 
+                    className={`relative p-6 rounded-xl border transition-all duration-300 cursor-pointer hover:shadow-lg ${
+                      selectedAnswer === index.toString() 
+                        ? 'border-space-secondary bg-gradient-to-r from-space-secondary/10 to-space-accent/10 shadow-lg' 
+                        : 'border-space-warm/20 hover:border-space-secondary/50 hover:bg-space-warm/5'
+                    }`}
+                    onClick={() => setSelectedAnswer(index.toString())}
+                  >
+                    <div className="flex items-center space-x-4">
+                      <RadioGroupItem value={index.toString()} id={`option-${index}`} className="flex-shrink-0" />
+                      <Label 
+                        htmlFor={`option-${index}`} 
+                        className="text-space-neutral cursor-pointer flex-1 text-lg leading-relaxed"
+                      >
+                        {option}
+                      </Label>
+                    </div>
                   </div>
-                </div>
-              ))}
-            </div>
+                ))}
+              </div>
+            </RadioGroup>
 
             <div className="flex justify-between items-center pt-6 border-t border-space-warm/20">
               <div className="text-sm text-space-neutral">
