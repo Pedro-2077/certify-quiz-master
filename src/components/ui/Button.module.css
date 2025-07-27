@@ -1,0 +1,135 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  white-space: nowrap;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.button:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 2px;
+}
+
+.button:disabled,
+.disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* Variants */
+.default {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.default:hover {
+  background-color: var(--primary);
+  opacity: 0.9;
+}
+
+.destructive {
+  background-color: var(--destructive);
+  color: var(--destructive-foreground);
+}
+
+.destructive:hover {
+  background-color: var(--destructive);
+  opacity: 0.9;
+}
+
+.outline {
+  border: 1px solid var(--input);
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.outline:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.secondary {
+  background-color: var(--secondary);
+  color: var(--secondary-foreground);
+}
+
+.secondary:hover {
+  background-color: var(--secondary);
+  opacity: 0.8;
+}
+
+.ghost {
+  color: var(--foreground);
+  background-color: transparent;
+}
+
+.ghost:hover {
+  background-color: var(--accent);
+  color: var(--accent-foreground);
+}
+
+.link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  background-color: transparent;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Sizes */
+.default {
+  height: 40px;
+  padding: 8px 16px;
+}
+
+.sm {
+  height: 36px;
+  border-radius: 6px;
+  padding: 0 12px;
+}
+
+.lg {
+  height: 44px;
+  border-radius: 6px;
+  padding: 0 32px;
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  padding: 0;
+}
+
+/* Space theme specific styles */
+.spaceSecondary {
+  background: linear-gradient(to right, var(--space-secondary), var(--space-accent));
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.spaceSecondary:hover {
+  opacity: 0.9;
+}
+
+.spaceOutline {
+  border: 1px solid var(--space-secondary);
+  color: var(--space-secondary);
+  background-color: transparent;
+}
+
+.spaceOutline:hover {
+  background-color: var(--space-secondary);
+  color: white;
+}
