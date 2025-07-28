@@ -24,5 +24,10 @@ export default defineConfig(({ mode }) => ({
       scopeBehaviour: 'local',
       generateScopedName: '[name]__[local]___[hash:base64:5]'
     }
+  },
+  esbuild: {
+    loader: 'jsx',
+    include: /src\/.*\.[jt]sx?$/,
+    exclude: []
   }
 }));
